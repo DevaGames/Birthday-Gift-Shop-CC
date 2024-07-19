@@ -1,0 +1,125 @@
+body{
+    font-family: "Roboto Condensed", sans-serif;
+    background-image: url("conf.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: shake;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#header-wrapper {
+    background: linear-gradient(to right, #74a8e0, #ffffff);
+    padding: 50px;
+    border: 5px solid black;
+    border-radius: 15px;
+}
+
+#header-wrapper #header-title {
+    text-align: center;
+    font-weight: 200;
+    font-size: 50px;
+    text-shadow: 22px 22px 5px darkslateblue;
+    background-clip: border-box;
+}
+
+#main-wrapper {
+    background-color: rgba(116, 168, 224, 0.2);
+    backdrop-filter: blur(5px);
+    padding: 5px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+#main-title {
+    transform: translateX(40%);
+    font-weight: 500;
+    font-size: 37.32px;
+}
+
+#main-welc {
+    transform: translateX(35%) translateY(20px);
+}
+
+main h1, main h2, main h3, main h4, main h5, main h6 {
+
+}
+
+#choicebox-title {
+    font-weight: 300;
+    text-align: center;
+}
+
+#choicebox-wrapper {
+    display: flex;
+    justify-content: center;
+}
+#choicebox-wrapper ul {
+    position: static;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+#choicebox-wrapper ul li {
+    list-style: none;
+    font-weight: 700;
+    font-size: 50px;
+    transform: translateX(-15px);
+    border-radius: 5px;
+    margin: 0;
+    transition: border-radius 1s, margin 1s;
+}
+
+#choicebox-wrapper ul li:hover {
+    background-color: #74a8e0;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+@keyframes shake {
+    from{transform: translateX(-50px) translateY(50px);};
+    50%{transform: translateX(50px) translateY(-50px);}
+    to{transform: translateX(-50px) translateY(50px);}
+}
+
+#main-grid {
+    position: static;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    gap: 50px;
+}
+
+.main-grid-item {
+    background-color: rgb(112, 112, 112);
+    padding: 7px;
+    border-radius: 5px;
+    border: 5px solid black;
+}
+
+.main-grid-item img{
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.item-name {
+    color: white;
+    font-weight: 350;
+    text-shadow: 3px 3px 3px black;
+}
+
+.item-price {
+    color: white;
+    transform: translateX(50px)
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
